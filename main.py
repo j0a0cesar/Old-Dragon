@@ -2,7 +2,7 @@ from personagem import Personagem
 from classico import Classico
 from aventureiro import Aventureiro
 from heroico import Heroico
-from auxiliares import Auxiliares
+from auxiliar import Auxiliar
 
 
 def main():
@@ -27,7 +27,7 @@ def main():
     if estilo == "classico":
         atributos_finais = valores_gerados
     else:
-        atributos_finais = Auxiliares.permitir_distribuicao(valores_gerados)
+        atributos_finais = Auxiliar.permitir_distribuicao(valores_gerados)
         
     if len(atributos_finais) != 6:
         print("\nOcorreu um erro na geração dos atributos.")
